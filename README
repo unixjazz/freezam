@@ -1,0 +1,4 @@
+Free Shazam 0.1
+
+This is an implementation of the fast audio identification Shazam algorithm. 
+We use a similar technique, but only use FOSS libraries and tools to get the work done.
