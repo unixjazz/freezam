@@ -8,7 +8,11 @@ We use a similar technique, but only use FOSS libraries and tools to get the wor
 HOW TO INSTALL
 --------------
 
-Ask us.
+First, make sure you have met the dependencies:
+
+Python2.7
+Gstreamer0.10
+Rpy
 
 
 License
