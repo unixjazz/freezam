@@ -1,6 +1,5 @@
 <html>
 <body>
-
 <H1>FREE SHAZAM!!!</H1>
 <br>
 <form enctype="multipart/form-data" action="uploader.php" method="POST">
@@ -11,7 +10,5 @@ Title: <input type="text" name="ftitle"/>
 Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 <input type="submit" value="Upload File" />
 </form>
-
-
 </body>
 </html>
