@@ -22,23 +22,16 @@
 <div id="content">
 <div class="right"> 
 
-<h2><a href="#">Upload was finished with success!</a></h2>
+<h2><a href="#">Song Identification</a></h2>
 <div class="articles">
-<?php
-
-$target_path = "uploads/";
-$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
-
-if($a = move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-    echo "<br>"."The file <b>".  basename( $_FILES['uploadedfile']['name']).
-    "</b> was successfully archived in your DB.";
-} else{
-    echo "<br>"."There was an error uploading the file, please try again!";
-}
-
-echo "<br>".$a;
-
-?>
+<form enctype="multipart/form-data" action="uploader.php" method="POST">
+<input type="hidden" name="MAX_FILE_SIZE" value="1000000000" />
+Just pick a sample or a complete audio file that you want to identify. The following formats are currently supported: <code>mp3, flac, ogg, m4a, wav</code><br /><br />
+Choose a file to upload:<br />
+<input name="uploadedfile" type="file" size=46/><br />
+<br /><input type="submit" value="Upload File" />
+</form>
+<br />
 </div>
 </div>
 

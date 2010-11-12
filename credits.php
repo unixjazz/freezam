@@ -21,24 +21,9 @@
 
 <div id="content">
 <div class="right"> 
-
-<h2><a href="#">Upload was finished with success!</a></h2>
+<h2><a href="#">Authors - <i>nanos gigantium humeris insidentes</i></a></h2>
 <div class="articles">
-<?php
-
-$target_path = "uploads/";
-$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
-
-if($a = move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-    echo "<br>"."The file <b>".  basename( $_FILES['uploadedfile']['name']).
-    "</b> was successfully archived in your DB.";
-} else{
-    echo "<br>"."There was an error uploading the file, please try again!";
-}
-
-echo "<br>".$a;
-
-?>
+FreeShazam was created by: Jinha K., K. Han, Luis Felipe R. Murillo, Larry Thomas and Felipe Nunes under the guidance of Professor Mark Hansen. The project was conducted as a class project for the course STAT202A at University of California, Post-Graduate Programme in Statistics. It was made possible by the amazing work done on Open Source technologies, such as Python and R languages, Gstreamer multimedia framework and the Sound Interface for R, created by Matthias Heymann. 
 </div>
 </div>
 

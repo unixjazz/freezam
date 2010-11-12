@@ -1,27 +1,47 @@
-Free Shazam 0.1
----------------
-
-This is an implementation of the fast audio identification Shazam algorithm. 
+freeShazam 0.1
+--------------
+This is an implementation of the fast audio identification algorithm design by Shazam.  
 We use a similar technique, but only use FOSS libraries and tools to get the work done.
 
 
-HOW TO INSTALL
+How it Works 
+------------
+freeShazam is composed by a set of tools for spectrogram analysis, fingerprinting, storage and fast retrieval:
+
+1. Transform music spectrograms into matrices
+2. Analyze matrices, storing its 'fingerprint' and generating unique hash numbers
+3. Use stored fingerprints and use them for music identifcation
+
+
+Requirements
+------------
+Before you install, make sure you have met the dependencies:
+
+Gstreamer0.10 and its plugins (for the 'good' set)
+Linux 2.6.x (might work under other Unix-flavored systems, but not tested)
+Apache2
+MySQL
+R-base
+Sound package for R
+PHP5
+
+
+How to Install
 --------------
+There is no tarball distribution at this moment, so grab the source code from our Git repository:
 
-First, make sure you have met the dependencies:
+git clone git://github.com/unixjazz/free_shazam.git
 
-Python2.7
-Gstreamer0.10
-Rpy
+After making a local copy of freeShazam, place the directory in your Apache public directory (must sit around /var/www/ or something).
+To generate the SQL database structure, use the free_shazam.sql file, located at db/
+Also, set the user/passwd of your MySQL on the file: 'db_connector.php' 
 
 
 License
 -------
-
-Licensed under BSD.
+freeShazam is licensed under GPL, version 2. Read 'copyright' file for the licensing terms.
 
 
 Authors
 -------
-
 Read AUTHORS file.

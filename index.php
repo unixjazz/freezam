@@ -22,23 +22,9 @@
 <div id="content">
 <div class="right"> 
 
-<h2><a href="#">Upload was finished with success!</a></h2>
+<h2><a href="#">Poor People's Shazam</a></h2>
 <div class="articles">
-<?php
-
-$target_path = "uploads/";
-$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
-
-if($a = move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-    echo "<br>"."The file <b>".  basename( $_FILES['uploadedfile']['name']).
-    "</b> was successfully archived in your DB.";
-} else{
-    echo "<br>"."There was an error uploading the file, please try again!";
-}
-
-echo "<br>".$a;
-
-?>
+Have you ever thought about having your own system of music identification to impress your friends? And... the problem always was that you couldn't afford an Iphone, nor pay a monthly for AT&T for their bad service? Well, now you can build your very own Shazam, rescaling it and adjusting it to fit your needs. Free Shazam is an implementation of the music indexing and matching algorithm developped by Shazam. It is a D-I-Y tool, meaning you have to populate the database by yourself in order to have the ability to successfully match songs. Access your pub repo at Github: <code>git@github.com:unixjazz/free_shazam.git</code>
 </div>
 </div>
 

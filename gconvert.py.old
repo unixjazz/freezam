@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+# Gstreamer 0.10 file converter
+
+import sys, pygst, gst
+
+converter = gst.parse_launch("filesrc location=test.mp3 ! decodebin ! audioconvert ! audio/x-raw-int,channels=1 ! wavenc ! filesink location=test.wav")
+converter.set_state(gst.STATE_PLAYING)
