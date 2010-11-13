@@ -1,4 +1,4 @@
-freeShazam 0.1
+freeShazam 0.3
 --------------
 This is an implementation of the fast audio identification algorithm design by Shazam.  
 We use a similar technique, but only use FOSS libraries and tools to get the work done.

@@ -27,11 +27,17 @@
 <?php
 
 $target_path = "uploads/";
-$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
+#$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
+$target_path = $target_path . basename('sample1.wav');
 
 if($a = move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
     echo "<br>"."The file <b>".  basename( $_FILES['uploadedfile']['name']).
-    "</b> was successfully archived in your DB.";
+    "</b> was successfully archived in your DB.</br>";
+    unset($output);
+    exec("cat /var/www/omg.R | /usr/bin/R --vanilla", $output);
+?>
+<a href="processR.php">Next(Please wait 10secs before you click Next)</a>
+<?php
 } else{
     echo "<br>"."There was an error uploading the file, please try again!";
 }
