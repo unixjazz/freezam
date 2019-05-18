@@ -35,7 +35,7 @@ shazam <- function (snd) {
 	mtimes <- matrix(1:length(spec$t),ncol=length(spec$t),nrow=length(spec$f),byrow=TRUE)
 	fileconst <<- cbind(mtimes[map],mfreqs[map])
 	
-	plot(fileconst)
+	#plot(fileconst)
 
 	hashes <- NULL
 	
@@ -93,5 +93,5 @@ dihash <- function(h) {
 
 
 ##### APPLICATION OF THE CODE ######
-music <- shazam(snd)
+#music <- shazam(snd)
 #spec <- specgram(snd$sound,64*8000/1000,8000,64*8000/1000)

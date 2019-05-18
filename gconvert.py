@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Gstreamer 0.10 file converter
+# Gstreamer file converter
 import sys, os
 import pygst
 import gst

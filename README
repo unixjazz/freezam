@@ -1,47 +1,48 @@
-freeShazam 0.3
---------------
-This is an implementation of the fast audio identification algorithm design by Shazam.  
-We use a similar technique, but only use FOSS libraries and tools to get the work done.
+
+freezam 0.4
+-----------
+This is an implementation of the fast audio identification algorithm designed by Shazam.
+We use an approximate technique, but only use FOSS libraries and tools to get the work 
+done. What you should know is that this is a mere PoC developed at Mark Hensen's stats 
+class at UCLA. If you want the secret sauce, talk to the folks at Shazam.
+
+** This project has been discontinued. It was kept here only for historical and 
+entertainment purposes. **
 
 
-How it Works 
-------------
-freeShazam is composed by a set of tools for spectrogram analysis, fingerprinting, storage and fast retrieval:
+How does it work 
+----------------
+Shazam is composed by a set of tools for spectrogram analysis, fingerprinting, 
+storage, and fast retrieval. Here we do not deal with the storage and retrieval part,
+only with the preparation of the files and the technique of identification. The file
+'PoC_shazam.R' is commented and is self-explanatory.
 
-1. Transform music spectrograms into matrices
-2. Analyze matrices, storing its 'fingerprint' and generating unique hash numbers
-3. Use stored fingerprints and use them for music identifcation
+There are a few steps to take:
+0. Transform music spectrograms into matrices
+1. Analyze matrices, storing its 'fingerprint' and generating unique hash numbers
+2. Use stored fingerprints and use them for music identification
 
 
 Requirements
 ------------
 Before you install, make sure you have met the dependencies:
 
-Gstreamer0.10 and its plugins (for the 'good' set)
-Linux 2.6.x (might work under other Unix-flavored systems, but not tested)
-Apache2
-MySQL
-R-base
-Sound package for R
-PHP5
-
-
-How to Install
---------------
-There is no tarball distribution at this moment, so grab the source code from our Git repository:
-
-git clone git://github.com/unixjazz/free_shazam.git
-
-After making a local copy of freeShazam, place the directory in your Apache public directory (must sit around /var/www/ or something).
-To generate the SQL database structure, use the free_shazam.sql file, located at db/
-Also, set the user/passwd of your MySQL on the file: 'db_connector.php' 
+- Gstreamer 1.0 and its plugins (for the 'good' set)
+- R-base
+- "Sound" and "signal" packages for R
 
 
 License
 -------
-freeShazam is licensed under GPL, version 2. Read 'copyright' file for the licensing terms.
+freezam is licensed under GPL, version 2. Read LICENSE file for details.
 
 
 Authors
 -------
 Read AUTHORS file.
+
+
+Thanks
+------
+Mark Hansen at UCLA for showing us the way and making stats awesome.
+

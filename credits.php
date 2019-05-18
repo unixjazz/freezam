@@ -23,7 +23,7 @@
 <div class="right"> 
 <h2><a href="#">Authors - <i>nanos gigantium humeris insidentes</i></a></h2>
 <div class="articles">
-FreeShazam was created by: Jinha K., K. Han, Luis Felipe R. Murillo, Larry Thomas and Felipe Nunes under the guidance of Professor Mark Hansen. The project was conducted as a class project for the course STAT202A at University of California, Post-Graduate Programme in Statistics. It was made possible by the amazing work done on Open Source technologies, such as Python and R languages, Gstreamer multimedia framework and the Sound Interface for R, created by Matthias Heymann. 
+Freezam was created by: Jinha K., K. Han, Luis Felipe R. Murillo, Larry Thomas and Felipe Nunes under the guidance of Professor Mark Hansen. The project was conducted as a class project for the course STAT202A at University of California, Post-Graduate Programme in Statistics. It was made possible by the amazing work done on Open Source technologies, such as Python and R languages, Gstreamer multimedia framework and the Sound Interface for R, created by Matthias Heymann. Mark Hensen guided us through Shazam's basic functionality and made it all possible. 
 </div>
 </div>
 
